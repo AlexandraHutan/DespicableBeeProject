@@ -24,4 +24,20 @@
     <string name="queen_rearing">Queen Rearing</string>
     <string name="inspections">Inspections</string>
     <string name="urgencies">Urgencies</string>
+    <string name="incorrect_username_or_password">Incorrect username or password</string>
+    <string name="send_instructions">Send Instructions</string>
+    <string name="notification">notification</string>
+    <string name="location">Location</string>
+    <string name="apiary_name">Apiary Name</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="save">Save</string>
+    <string name="add_apiary">Add Apiary</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="add_hive">Add Hive</string>
+    <string name="hive_number">Hive Number</string>
+    <string name="apiary">Apiary</string>
+    <string name="type">Type</string>
 </resources>

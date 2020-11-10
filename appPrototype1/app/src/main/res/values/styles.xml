@@ -2,7 +2,13 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/tangerine</item>
+        <item name="colorPrimary">#CB8617</item>
+        <item name="colorPrimaryDark">@color/light_tan_two</item>
+        <item name="colorAccent">@color/sandy</item>
+    </style>
+    <style name="Two" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#CB8617</item>
         <item name="colorPrimaryDark">@color/light_tan_two</item>
         <item name="colorAccent">@color/sandy</item>
     </style>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".loginFragment"
-    android:background="@drawable/rounded_corner">
+    android:background="@drawable/inputfragment">
 
 
     <TextView
@@ -15,6 +15,8 @@
         android:layout_marginTop="2dp"
         android:paddingTop="10dp"
         android:text="@string/email"
+        android:textColor="#CB8617"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -46,9 +48,11 @@
         android:id="@+id/passwordTitle"
         android:layout_width="350dp"
         android:layout_height="36dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         android:paddingTop="10dp"
         android:text="@string/password"
+        android:textColor="#CB8617"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -82,7 +86,7 @@
         android:paddingRight="8dp"
         android:text="@string/forgot_password"
         android:textAlignment="textEnd"
-        android:textColor="@color/tangerine"
+        android:textColor="#CB8617"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,5 +95,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
         app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/incorrect_username_or_password"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.026"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

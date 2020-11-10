@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".SignUpTopFragment"
     android:orientation="vertical"
-    android:background="@drawable/gradient">
+    android:background="#80CB8617">
 
     <TextView
         android:layout_width="match_parent"
