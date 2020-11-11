@@ -21,7 +21,7 @@ public class NewHiveActivity extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     ArrayAdapter<String> adapter2;
     ArrayAdapter<String> adapter3;
-    String[] items3 = new String[]{""};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,7 @@ public class NewHiveActivity extends AppCompatActivity {
 
         String[] items = new String[]{"4 frames", "5 frames", "8 frames", "10 frames"};
         String[] items2 = new String[]{"Extract", "From", "Database"};
+        String[] items3 = new String[]{"Nucleus","Mating Nuc"};
 
         adapter = new ArrayAdapter<>(this, R.layout.list_dropdown, items);
         adapter2 = new ArrayAdapter<>(this, R.layout.list_dropdown, items2);
@@ -42,23 +43,23 @@ public class NewHiveActivity extends AppCompatActivity {
         dropdown2.setAdapter(adapter2);
         dropdown3.setAdapter(adapter3);
 
-        dropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 1) {
-                    items3 = new String[]{"Nucleus", "Mating Nuc"};
-                    adapter3 = new ArrayAdapter<>(parent, R.layout.list_dropdown, items3);
-                    adapter3.notifyDataSetChanged();
-                    Toast.makeText(getApplicationContext(),"This works",Toast.LENGTH_LONG).show();
-                }
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+//        dropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                if (position == 1) {
+//                    items3 = new String[]{"Nucleus", "Mating Nuc"};
+//                    //adapter3 = new ArrayAdapter<>(parent, R.layout.list_dropdown, items3);
+//                    adapter3.notifyDataSetChanged();
+//                    Toast.makeText(getApplicationContext(),"This works",Toast.LENGTH_LONG).show();
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
     }
 
 }
