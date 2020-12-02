@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_tan_two">#FDD395</color>
+    <color name="light_tan">#FBD07D</color>
+    <color name="sandy_two">#FAC866</color>
+    <color name="sandy">#FBB34E</color>
+    <color name="mango">#faa22f</color>
+    <color name="tangerine">#FF9000</color>
+    <color name="barbie_pink">#ff33c9</color>
+    <color name="burned_sierra">#CB8617</color>
+    <color name="light_tan_three">#FAF3D4</color>
+</resources>
