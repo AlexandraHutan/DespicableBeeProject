@@ -4,6 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".hive.HiveDetailsActivity">
+
+    <ImageButton
+        android:id="@+id/newHiveBTN1"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#65CB8617"
+        android:tint="#CB8617"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apiariesListRV"
+        app:srcCompat="@drawable/addmedium" />
+    <ListView
+        android:id="@+id/hiveListDetails"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

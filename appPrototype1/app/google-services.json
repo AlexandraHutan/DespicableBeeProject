@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "719223042672",
+    "firebase_url": "https://beekeeper-s-handbook-default-rtdb.firebaseio.com",
+    "project_id": "beekeeper-s-handbook",
+    "storage_bucket": "beekeeper-s-handbook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719223042672:android:0a9c4114a0257a84353ab5",
+        "android_client_info": {
+          "package_name": "com.example.appprototype1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719223042672-df5i1hmm8c5fliehfilpr4b53or0iqcv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appprototype1",
+            "certificate_hash": "c26e651954e9bdac23a249182b58ff6330d3632d"
+          }
+        },
+        {
+          "client_id": "719223042672-a06nd23tp4m930viq9d8idte3c46k134.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGxfWS0KKNoxk7hfnws4YdfiMYBDRtzd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719223042672-a06nd23tp4m930viq9d8idte3c46k134.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

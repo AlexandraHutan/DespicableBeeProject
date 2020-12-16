@@ -40,4 +40,14 @@
     <string name="hive_number">Hive Number</string>
     <string name="apiary">Apiary</string>
     <string name="type">Type</string>
+    <string name="strength">Strength</string>
+    <string name="weak">weak</string>
+    <string name="average">average</string>
+    <string name="strong">strong</string>
+    <string name="honey_boxes">Honey Boxes</string>
+    <string name="has_queen">Has Queen</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="marked">Marked</string>
+    <string name="add_notes">Add notes...</string>
 </resources>

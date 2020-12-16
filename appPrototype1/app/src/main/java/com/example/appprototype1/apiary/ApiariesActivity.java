@@ -3,6 +3,7 @@ package com.example.appprototype1.apiary;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,22 +17,50 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.appprototype1.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class ApiariesActivity extends AppCompatActivity {
     ImageButton newApiaryBTN;
+    RecyclerView apiariesListRV;
+    DatabaseReference database;
+    ArrayList<String> apiariesList = new ArrayList<>();;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apiaries);
+        apiariesListRV = (RecyclerView) findViewById(R.id.apiariesListRV);
+        database = FirebaseDatabase.getInstance().getReference("Users").child("Apiaries");
+        database.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot datasnapshot) {
+                apiariesList.clear();
+                for(DataSnapshot snapshot1: datasnapshot.getChildren()){
+                    apiariesList.add(snapshot1.getValue().toString());
+                }
 
-        String[] menuItems = {"Apiary One", "Apiary Two", "Apiary Three"};
+            }
 
-        ListView listView = (ListView) findViewById(R.id.apiariesList);
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
-        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(this, R.layout.list,menuItems);
-        listView.setAdapter(listViewAdapter);
+            }
+        });
+        for(String str : apiariesList){
+            Toast.makeText(getApplicationContext(),str,Toast.LENGTH_SHORT).show();
+        }
+        ApiaryAdapter apiaryAdapter = new ApiaryAdapter(apiariesList);
+        apiariesListRV.setAdapter(apiaryAdapter);
+
 
         newApiaryBTN = findViewById(R.id.newApiaryBTN2);
         newApiaryBTN.setOnClickListener(new View.OnClickListener(){
